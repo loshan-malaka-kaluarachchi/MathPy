@@ -3,7 +3,7 @@
 Implementation of classes to model symbolic variables.
 Properties of a algebraic variable.
 
-In the following $a$ is the coefficient; $x$ is the symbol for the variable and $p$ is the power.
+For algebraic terms, $a$ is the coefficient, $x$ is the symbol for the variable and $p$ is the power.
 
 $$ a \cdot x^{p} $$
 
