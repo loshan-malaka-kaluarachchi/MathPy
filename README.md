@@ -7,5 +7,10 @@ Properties of a algebraic variable.
 
 ## Additivity
 
-$f(x + y) = f(x) + f(y)$
+* $f(x + y) = f(x) + f(y)$
+
+
+## Homegeneity
+
+* $f(a.x) = a.f(x)$
 
