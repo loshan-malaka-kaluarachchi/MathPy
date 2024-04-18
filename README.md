@@ -1,16 +1,15 @@
 # Mathematic variables
 
+Implementation of classes to model symbolic variables.
 Properties of a algebraic variable.
 
-* Additivity 
-* Homogeneity
+In the following $a$ is the coefficient; $x$ is the symbol for the variable and $p$ is the power.
 
-## Additivity
+$$ a \cdot x^{p} $$
 
-* $f(x + y) = f(x) + f(y)$
+### Case 1: Variables with equal powers can be added
+
+$$ a \cdot x^{p} + b \cdot x^{p} = \( a + b\) \cdot x^{p} $$ 
 
 
-## Homegeneity
-
-* $f(a.x) = a.f(x)$
 
