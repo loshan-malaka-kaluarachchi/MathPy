@@ -14,7 +14,9 @@ class Math_Symb:
     
     def __add__(self, other):
         if self.symbol == other.symbol and self.index == other.index:
-            return self.coefficient + other.coefficient
+            return Math_Symb(self.coefficient + other.coefficient, self.symbol, self.index)
+        else:
+            return f'{Math_Symb(self.coefficient, self.symbol, self.index)} + {Math_Symb(other.coefficient, other.symbol, other.index)}'
     
     def __repr__(self) -> str:
         if self.coefficient == 0:
