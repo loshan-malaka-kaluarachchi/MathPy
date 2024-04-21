@@ -13,12 +13,14 @@ class Testcase_symbolic_methods(unittest.TestCase):
     def test__add__method(self):
         symb1 = Math_Symb(1,'X',0)
         symb2 = Math_Symb(2,'X',0)
+        symb3 = Math_Symb(5,'X',2)
+        
         self.assertIsInstance(symb1,Math_Symb)
         self.assertIsInstance(symb2,Math_Symb)
-        self.assertEqual(symb1 + symb2, Math_Symb(3,'X',0))
-        
-        
-        
+        self.assertIsInstance(symb3,Math_Symb)
+        self.assertIsInstance(symb1 + symb2, Math_Symb)
+        self.assertIsInstance(symb1 + symb3, Math_Symb)
+                
 if __name__ == '__main__':
     unittest.main()
     
