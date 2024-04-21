@@ -17,7 +17,11 @@ class Math_Symb:
             return Math_Symb(self.coefficient + other.coefficient, self.symbol, self.index)
         else:
             return f'{Math_Symb(self.coefficient, self.symbol, self.index)} + {Math_Symb(other.coefficient, other.symbol, other.index)}'
-    
+        
+    def __mul__(self,other):
+        if self.symbol == other.symbol:
+            return Math_Symb(self.coefficient*other.coefficient, self.symbol, self.index + other.index)
+        
     def __repr__(self) -> str:
         if self.coefficient == 0:
             return ''
@@ -29,6 +33,3 @@ class Math_Symb:
             return f'{self.coefficient}{self.symbol}'
         else:
             return f'{self.coefficient}{self.symbol}^{self.index}'
-            
-        
-        
